@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Glp grocery online vegetable market</title>
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sign.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="1.png" width="200px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="products.html">Products</a></li>
+                        <li class="active"><a href="Aboutus.html">About us</a></li>
+                        <li class="active"><a href="contactus.html">Contact us</a></li>
+                        <li class="active"><a href="sign.html" class="region">Sign Up-In</a></li>
+                        </ul>
+                </nav>
+                        <a href="cart.html" class="active"><img src="3.png" width="30px" height="30px"></a>
+                        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                    
+            </div>
+        </div>
+        
+    
+    <div class="account-page">
+        <div class="container">
+           <div class="row">
+               <div class="col-2">
+                   <img src="50.png" width="80%">
+               </div>
+               <div class="col-2">
+                   <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="login()">Login</span>
+                           <span onclick="register()">Register</span>
+                           <hr id="Indicator">
+                       </div>
+                       
+                       <form id="LoginForm">
+                           <input type="text" placeholder="Username">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Login</button>
+                           <a href="">Forgot password</a>
+                       </form>
+                       
+                       <form id="RegForm">
+                           <input type="text" placeholder="Username">
+                           <input type="email" placeholder="Email">
+                           <input type="password" placeholder="Password">
+                           <button type="submit" class="btn">Register</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+            
+        </div>
+        </div>
+        </div>
+    
+    <!------------------------footer------------------>
+    <div class="footer">
+   <div class="container">
+    <hr>  
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download App For Android and ios mobile phone</p>
+               <div class="app-logo">
+                   <a href=""><img src="44.jpg"></a>
+                   <a href=""><img src="43.png"></a>
+               </div>
+           </div>
+            <div class="footer-col-2">
+              <a href="index.html"><img src="1.png"></a>
+               <p>Our purpose is to Sustainably deliver the Organic vegetables to door step.</p>
+           </div>
+           <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <a href="coupons.txt"><li>Coupons</li></a>
+                   <a href="blogspot.txt"><li>Blog Post</li></a>
+                   <a href="return.txt"><li>Return Policy</li></a>
+                   <a href="join.txt"><li>Join us</li></a>
+               </ul>
+           </div>
+           <div class="footer-col-4">
+               <h3>Follow us</h3>
+               <ul>
+                   <a href="https://www.facebook.com/glpgrocery9/"><li>Facebook</li></a>
+                   <a href="https://www.instagram.com/glpgrocery/"><li>Instagram</li></a>
+                   <a href="https://www.twitter.com/GlpGrocery?s=08"><li>Twitter</li></a>
+                    <a href="https://www.youtube.com/channel/UCGARluf7x3-UupyVgx9lNXA"><li>Youtube</li></a>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2021 - Glp Grocery (created by <a href="https://www.instagram.com/lokesh.prasanth/">Lokeshprasanth)</a></p>
+   </div>
+    
+</div>
+    <!-------------javascipt for toggle menu----------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+                
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script>
+
+<!-------------javascipt for toggle form----------->
+
+ <script>
+     
+    var LoginForm = document.getElementById("LoginForm");
+     var RegForm = document.getElementById("RegForm");
+     var Indicator = document.getElementById("Indicator");
+     
+     
+       function register(){
+           
+           RegForm.style.transform = "translateX(0px)";
+           LoginForm.style.transform = "translateX(0px)";
+           Indicator.style.transform = "translateX(100px)";
+       }
+     
+       function login(){
+           
+           RegForm.style.transform = "translateX(300px)";
+           LoginForm.style.transform = "translateX(300px)";
+           Indicator.style.transform = "translateX(0px)";
+           
+       }
+     
+    </script>
+
+
+    
+
+</body>
+</html>
